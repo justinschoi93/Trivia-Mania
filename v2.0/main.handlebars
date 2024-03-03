@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia-Mania</title>
+</head>
+<body>
+    <header class = 'header'>
+        <div class = 'container'>
+            <nav class = 'navbar'>
+                <h1 class = 'nav-logo'>Trivia-Mania</h1>
+                <div class = 'nav-menu'>
+                    <ul class = 'menu-options'>
+                        <li class = 'nav-item'><a href = "/"><span>Home</span></a></li>
+                        {{#if logged_in}}
+                            <li class = 'nav-item'><a href=""><span>Trivia</span></a></li>
+                            <li class = 'nav-item'><a href = ""><span></span></a></li>
+                        {{else}}
+                            <li class = 'nav-item'><a href=""><span>Login</span></a></li>
+                            <li class = 'nav-item'><a href = ""><span>New Player</span></a></li>
+                        {{/if}}
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class = "content-container">
+        <div class="content-box">
+            <div class = "content">
+                {{{body}}}
+            </div>
+        </div>
+    </div>
+    <footer class = 'footer'>
+        <div class = 'footer-btns'></div>
+    </footer>
+</body>
+</html>
